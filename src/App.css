@@ -1,0 +1,258 @@
+#root,body {
+  padding: 0;
+  margin: 0 auto;
+  width: 100vw;
+  height: 100vh;
+
+}
+
+.App {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  margin:20px;
+  flex-direction:column;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+
+
+/* This css responsible for style in top content */
+.topContentContainer {
+  flex-direction:row;
+  width: 80%;
+  height: 30%;
+  display: flex;
+  flex-wrap: nowrap;
+  margin-bottom: 1rem;
+  padding: 10px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.topContentLeft {
+  width: 75%;
+  height: 100%;
+  justify-content: left;
+
+}
+
+.topContentRight {
+  width: 25%;
+  height: 100%;
+  display: flex;
+  text-align: left;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin-left: 2px;
+  justify-content: end;
+}
+
+.headingContainer {
+  font-size: large;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.heading {
+  margin:13px;
+  padding-left: 5px;
+  font-size: large;
+  color: rgb(16, 73, 131);
+  color: transparent;
+  
+}
+
+.heading {
+  color: rgb(16, 73, 131);
+}
+
+.heading:not(:first-child) {
+  opacity: 0.6;
+}
+
+.today {
+  margin:15px;
+  padding: 5px;
+  font-size: small;
+  color: grey;
+  opacity: 0.6;
+}
+
+.news {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  font-weight: 500;
+}
+
+.news-topic {
+  color:black;
+  margin: 5px;
+  font-size: 15px;
+}
+
+.news-topic-text {
+  padding-left: 5px;
+  text-align: right;
+  opacity: 0.8;
+}
+
+.exchange {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 15px;
+  align-items: center;
+}
+
+.exchangeTitle {
+  margin: 3px;
+  font-weight: 550;
+}
+
+.exchangeValue {
+  margin: 3px;
+}
+
+.exchangeChangeValue {
+  margin: 3px;
+  font-size: 13px;
+  color:grey;
+  opacity: 0.5;
+
+}
+
+.topRight-title {
+  color: rgb(16, 73, 131);
+  margin: 3px;
+}
+
+.topRight-description {
+  font-size: 13px;
+  margin: 3px;
+}
+
+
+/*  This css styles responsible for middle content */
+
+.MiddleContentContainer {
+  width: 80%;
+  height: 35%;
+  flex-direction:column;
+  display: flex;
+  flex-wrap: nowrap;
+  padding: 10px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.YandexServices {
+  display: flex;
+  flex-wrap: wrap;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  font-weight: 500;
+}
+
+.service{
+  margin:10px;
+  text-decoration: none;
+} 
+
+.input {
+  box-sizing: border-box;
+  width: 88%;
+  height: 3rem;
+  border: 1px solid #ffeba0;
+  border-width: 4px;
+  border-radius: 10px 0 0 10px;
+}
+
+
+.input-btn {
+  width: 12%;
+  height: 3rem;
+  text-align: center;
+  justify-content: center;
+  background-color: #ffeba0;
+  border: 1px solid #ffeba0;
+  color: black;
+  opacity: 0.8;
+  border-radius: 0 30px 30px 0;
+  cursor: pointer;
+}
+
+.input-btn:active {
+  background-color: black;
+  color:white;
+}
+
+.underInputText {
+  opacity: 0.8;
+  color: grey;
+  text-decoration: none;
+}
+
+.ads {
+  width: 100%;
+  height: 60%;
+  text-align: center;
+}
+
+.adsBanner {
+  margin: 10px;
+  height: 120px;
+  width: 500px;
+  text-align: center;
+  pointer-events: none;
+
+}
+
+
+/*  This css styles responsible for bottom-page content */
+
+
+.BottomContentContainer {
+  width: 80%;
+  height: 35%;
+  display: flex;
+  grid-template-columns: repeat(3, 1fr);
+  overflow: hidden;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+}
+
+
+.item-bottom {
+  height: 150px;
+  width: 200px;
+  margin:0px;
+  padding: 0px;
+  font-size: medium;
+  line-height: 3px;
+  display: flex;
+}
+
+.item-bottom-content {
+  margin:5px;
+  font-size: medium;
+  line-height: 3px;
+}
+
+.item-bottom-content:first-child {
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.item-bottom-h1 {
+  font-size: 17px;
+  color: rgb(16, 73, 131);
+  margin-bottom: 3px;
+  padding-bottom: 5px;
+}
+
+.imgWeather {
+  pointer-events: none;
+}
